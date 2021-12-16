@@ -95,8 +95,63 @@ h2{
     background-color: transparent;
 }
 
-#reg:hover, #log:hover{
+#reg:hover, #log:hover, .watchnow:hover{
     opacity: 80%;
     transition: 0.5s;
     cursor:pointer;
+}
+
+.sliderdiv{
+    width: 100vw;
+    height: 27vw;
+}
+
+.slidermain{
+    border:1px solid red;
+    height: 100%;
+}
+
+.slider{
+    height: 100%;
+    width: 400%;
+    display: flex;
+}
+
+.slider div{
+    position: relative;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderfoto{
+    position: absolute;
+    width: 100%;
+}
+
+.slide h1{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+    font-size: 35px;
+}
+
+.watchnow{
+    position: absolute;
+    width: 200px;
+    height: 32px;
+    padding: 0px 40px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    color: #26262d;
+    border-radius: 3px;
+    transition: 0.5s;
+
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
 }
