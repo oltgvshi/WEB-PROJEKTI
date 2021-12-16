@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Vaud,Helvetica Neue,sans-serif;
+}
+
+header{
+    background-color: #26262d;
+    padding: 15px 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    display: flex;
+    align-items: center;
+}
+
+#left{
+    display: flex;
+    align-items: center;
+}
+
+#logoheader{
+    height: 25px;
+}
+
+h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+#topbrowse{
+    margin-left: 55px;
+    cursor:pointer;
+}
+
+#searchinput{
+    transition: 0.5s;
+    color: #26262d;
+    width: 350px;
+    text-align: center;
+    padding: 8px 0px;
+    font-size: 16px;
+    border-radius: 50px;
+    border-style: none;
+
+    /*Per me e vendos iconen ne input*/
+    background-image: url("Icons/search.svg");
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: 17px;
+}
+
+#searchinput:hover{
+    opacity: 80%;
+    transition: 0.5s;
+}
+
+#searchinput:focus{
+    opacity: 80%;
+    transition: 0.5s;
+    outline: none;
+}
+
+#butonat{
+    display: flex;
+    align-items: center;
+}
+
+#reg{
+    width: 140px;
+    height: 32px;
+    padding: 0px 40px;
+    margin-right: 30px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    color: #26262d;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+#log{
+    width: 140px;
+    height: 32px;
+    padding: 0px 40px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
+#reg:hover, #log:hover{
+    opacity: 80%;
+    transition: 0.5s;
+    cursor:pointer;
+}
