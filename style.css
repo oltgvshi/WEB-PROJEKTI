@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: Vaud,Helvetica Neue,sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -28,15 +28,12 @@ a{
     height: 25px;
 }
 
-h2{
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-}
-
 #topbrowse{
     margin-left: 55px;
     cursor:pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
 }
 
 #searchinput{
@@ -44,7 +41,7 @@ h2{
     color: #26262d;
     width: 350px;
     text-align: center;
-    padding: 8px 0px;
+    padding: 7px 0px;
     font-size: 16px;
     border-radius: 50px;
     border-style: none;
@@ -122,21 +119,12 @@ h2{
     flex-basis: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: left;*/
 }
 
 .sliderfoto{
     position: absolute;
     width: 100%;
-}
-
-.slide h1{
-    position: absolute;
-    color: white;
-    top: 50%;
-    left: 5%;
-    transform: translate(-5%, -50%);
-    font-size: 35px;
 }
 
 .watchnow{
@@ -151,7 +139,20 @@ h2{
     border-radius: 3px;
     transition: 0.5s;
 
-    top: 85%;
+    top: 93%;
     left: 50%;
-    transform: translate(-50%, -85%);
+    transform: translate(-50%, -93%);
+}
+
+.moviedesc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 5%;
+    color: white;
+}
+
+.moviegenre{
+    font-size: 16px;
+    font-weight: normal;
 }
