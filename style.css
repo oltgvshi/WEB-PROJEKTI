@@ -37,7 +37,7 @@ a{
 }
 
 #searchinput{
-    transition: 0.5s;
+    transition: 0.5s ease;
     color: #26262d;
     width: 350px;
     text-align: center;
@@ -55,12 +55,12 @@ a{
 
 #searchinput:hover{
     opacity: 80%;
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
 #searchinput:focus{
     opacity: 80%;
-    transition: 0.5s;
+    transition: 0.5s ease;
     outline: none;
 }
 
@@ -79,7 +79,7 @@ a{
     background-color: white;
     color: #26262d;
     border-radius: 3px;
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
 #log{
@@ -94,7 +94,7 @@ a{
 
 #reg:hover, #log:hover, .watchnow:hover{
     opacity: 80%;
-    transition: 0.5s;
+    transition: 0.5s ease;
     cursor:pointer;
 }
 
@@ -104,14 +104,16 @@ a{
 }
 
 .slidermain{
-    border:1px solid red;
     height: 100%;
+    position: relative;
 }
 
 .slider{
     height: 100%;
     width: 400%;
     display: flex;
+    transition: all 0.7s ease;
+    overflow: hidden;
 }
 
 .slider div{
@@ -119,7 +121,6 @@ a{
     flex-basis: 100%;
     display: flex;
     justify-content: center;
-    /*align-items: left;*/
 }
 
 .sliderfoto{
@@ -137,7 +138,7 @@ a{
     background-color: white;
     color: #26262d;
     border-radius: 3px;
-    transition: 0.5s;
+    transition: 0.5s ease;
 
     top: 93%;
     left: 50%;
@@ -154,4 +155,28 @@ a{
 .moviegenre{
     font-size: 16px;
     font-weight: normal;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
 }
