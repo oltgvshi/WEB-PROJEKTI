@@ -363,3 +363,23 @@ footer{
     color: #6b7c7a;
     padding-bottom: 25px;  
 }
+
+/*movie.html*/
+
+.description{
+    padding-top: 50px;
+    display: flex;
+}
+
+.movieposterimg{
+    width: 270px;
+    padding-right: 50px;
+}
+
+.movietitledsc{
+    font-size: 50px;
+}
+
+.tematika{
+    font-size: 12px;
+}
