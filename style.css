@@ -269,3 +269,31 @@ a{
 .play{
     overflow: hidden;
 }
+
+.movietitull{
+    padding: 20px 0px 30px;
+    display: inline-block;
+}
+
+.moviedescript{
+    font-size: 12px;
+    color: #FFFFFF80;
+}
+
+a:visited, a:link, a:active{
+    text-decoration:none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: #ff501a;
+    transition: 0.7s ease;
+}
+
+a{
+    transition: 0.7s ease;
+}
+
+.moviesslide{
+    display: flex;
+}
