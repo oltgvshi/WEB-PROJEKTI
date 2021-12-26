@@ -383,3 +383,22 @@ footer{
 .tematika{
     font-size: 12px;
 }
+
+.addlist{ 
+    width: 270px;
+    height: 32px;
+    padding: 0px 40px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    color: #26262d;
+    border-radius: 3px;
+    transition: 0.5s ease;
+    margin-top: 20px;
+}
+
+.addlist:hover{
+    opacity: 80%;
+    transition: 0.5s ease;
+    cursor:pointer;
+}
