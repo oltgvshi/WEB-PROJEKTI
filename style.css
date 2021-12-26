@@ -5,6 +5,8 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: auto;
 }
 
 header{
@@ -106,6 +108,7 @@ a{
 .slidermain{
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .slider{
@@ -185,6 +188,7 @@ a{
     padding: 60px 60px;
     background-color: #26262d;
     color: white;
+    overflow: hidden;
 }
 
 .moviegenreh{
