@@ -229,6 +229,22 @@ a{
     transform: translate(-50%, -50%);
     font-size: 30px;
     transition: 0.7s ease;
+    border: 2px solid white;
+    padding: 10px 17px;
+    border-radius: 100%;
+}
+
+.playbutton:hover, .listadd:hover{
+    color: #ff501a;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+.playbutton:hover{
+    font-size: 40px;
+    transition: 0.7s ease;
+    border: 2px solid #ff501a;
+    padding: 10px 18px;
 }
 
 .listadd{
@@ -250,12 +266,6 @@ a{
   -webkit-filter: blur(8px);
 }
 
-.playbutton:hover, .listadd:hover{
-    color: #ff501a;
-    transition: 0.7s ease;
-}
-
-.playbutton:hover{
-    font-size: 40px;
-    transition: 0.7s ease;
+.play{
+    overflow: hidden;
 }
