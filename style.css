@@ -180,3 +180,82 @@ a{
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
+
+.main{
+    padding: 60px 60px;
+    background-color: #26262d;
+    color: white;
+}
+
+.moviegenreh{
+    padding-bottom: 20px;
+}
+
+.play{
+    width: 250px;
+    height: 370px;
+    border: 1px solid #3c3c42;
+    position: relative;
+}
+
+.posterimg{
+    width: 100%;
+    position: absolute;
+}
+
+.filmimain{
+    padding-right: 10px;
+}
+
+.list:hover{
+    opacity: 100%;
+    transition: 0.7s ease;
+}
+
+.list{
+    transition: 0.7s ease;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    opacity: 0%;
+    overflow: hidden;
+}
+
+.playbutton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    transition: 0.7s ease;
+}
+
+.listadd{
+    padding: 10px 0px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    opacity: 100%;
+    transition: 0.7s ease;
+}
+
+.greybg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.playbutton:hover, .listadd:hover{
+    color: #ff501a;
+    transition: 0.7s ease;
+}
+
+.playbutton:hover{
+    font-size: 40px;
+    transition: 0.7s ease;
+}
