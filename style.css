@@ -305,3 +305,57 @@ a{
     border: none;
     border-top: 1px solid #FFFFFF80;
 }
+
+footer{
+    background-color: #202026;
+    color: white;
+    padding: 60px 60px 40px;
+}
+
+.logocontact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social{
+    display: flex;
+}
+
+.social a{
+    padding: 0px 10px;
+    font-size: 18px;
+    transition: 0.7s ease;
+}
+
+.social a:hover{
+    transition: 0.7s ease;
+    color: #FFFFFF80;
+}
+
+.copyright{
+    font-size: 12px;
+    text-align: center;
+    opacity: 20%;
+}
+
+.footercontent{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-top: 45px;
+}
+
+.footerh1p a{
+    padding-bottom: 8px;
+    transition: 0.7s ease;
+}
+
+.footerh1p a:hover{
+    color: #FFFFFF80;
+    transition: 0.7s ease;
+}
+
+.footerh{
+    color: #6b7c7a;
+    padding-bottom: 25px;  
+}
