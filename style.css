@@ -298,3 +298,10 @@ a{
 .moviesslide{
     display: flex;
 }
+
+.horizontal{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    border: none;
+    border-top: 1px solid #FFFFFF80;
+}
