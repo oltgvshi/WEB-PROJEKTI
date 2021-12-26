@@ -25,6 +25,23 @@
        
         <div class="registerpage">
             <i class="far fa-user-circle" id="person"></i>
+
+            <div class="name">
+                <div class="namediv">
+                    <h6>Name</h6>
+                    <p id="nameerror"> </p>
+                </div>
+                <input type="text" id="nameinput" placeholder="Type your name">
+            </div>
+
+            <div class="surname">
+                <div class="surnamediv">
+                    <h6>Surname</h6>
+                    <p id="surnameerror"> </p>
+                </div>
+                <input type="text" id="surnameinput" placeholder="Type your surname">
+            </div>
+
             <div class="username">
                 <div class="usernamediv">
                     <h6>Username</h6>
@@ -47,14 +64,6 @@
                     <p id="passworderror"> </p>
                 </div>
                 <input type="password" id="passwordinput" placeholder="Type your password">
-            </div>
-
-            <div class="password2">
-                <div class="password2div">
-                    <h6>Password</h6>
-                    <p id="password2error"> </p>
-                </div>
-                <input type="password" id="password2input" placeholder="Confirm your password">
             </div>
 
             <button id="registerbuttoni">Register</button>
@@ -133,6 +142,6 @@
             <hr class="horizontal">
             <p class="copyright">Copyright © 2021 Luan Boshnjaku & Olt Gashi</p>
         </footer>
-        <script src="script.js"></script>
+        <script src="register.js"></script>
     </body>
 </html>
