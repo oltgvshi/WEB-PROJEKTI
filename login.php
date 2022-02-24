@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css\style.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <script src="https://kit.fontawesome.com/4480201544.js" crossorigin="anonymous"></script>
         <title></title>
@@ -119,6 +119,6 @@
             <hr class="horizontal">
             <p class="copyright">Copyright © 2021 Luan Boshnjaku & Olt Gashi</p>
         </footer>
-        <script src="login.js"></script>
+        <script src="javascript\login.js"></script>
     </body>
 </html>

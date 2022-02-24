@@ -142,6 +142,6 @@
             <hr class="horizontal">
             <p class="copyright">Copyright © 2021 Luan Boshnjaku & Olt Gashi</p>
         </footer>
-        <script src="register.js"></script>
+        <script src="javascript\register.js"></script>
     </body>
 </html>

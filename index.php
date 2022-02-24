@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css\style.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <script src="https://kit.fontawesome.com/4480201544.js" crossorigin="anonymous"></script>
         <title></title>
@@ -17,8 +17,8 @@
             </div>
 
             <div id="butonat">
-                <a href="register.html"><button id="reg">Register</button></a>
-                <a href="login.html"><button id="log">Login</button></a>
+                <a href="register.php"><button id="reg">Register</button></a>
+                <a href="login.php"><button id="log">Login</button></a>
             </div>
         </header>
         <div class="sliderdiv">
@@ -79,7 +79,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -139,7 +139,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -154,7 +154,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -169,7 +169,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -191,7 +191,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -206,7 +206,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -221,7 +221,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -236,7 +236,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -251,7 +251,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -266,7 +266,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -281,7 +281,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -303,7 +303,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -318,7 +318,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -333,7 +333,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -348,7 +348,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -363,7 +363,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -378,7 +378,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -393,7 +393,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -415,7 +415,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -430,7 +430,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -445,7 +445,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -460,7 +460,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -475,7 +475,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -490,7 +490,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -505,7 +505,7 @@
                             <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
                             <div class="list">
                                 <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.html"><p class="playbutton">&#9654;</p></a>
+                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
                                 <p class="listadd">Add to My List</p>
                             </div>
                         </div>
@@ -593,6 +593,6 @@
             <hr class="horizontal">
             <p class="copyright">Copyright © 2021 Luan Boshnjaku & Olt Gashi</p>
         </footer>
-        <script src="script.js"></script>
+        <script src="javascript\script.js"></script>
     </body>
 </html>
