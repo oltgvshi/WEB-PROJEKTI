@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css\style.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <script src="https://kit.fontawesome.com/4480201544.js" crossorigin="anonymous"></script>
         <title></title>
@@ -45,79 +45,9 @@
 
         </div>
 
-        <footer>
-            <div class="logocontact">
-                <div class="logo">
-                    <a href="#"><img src="Logo/Logo_white.png" alt="Logo" id="logoheader"></a>
-                </div>
-                <div class="social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-            
-            <div class="footercontent">
-                <div class="footerh1p">
-                    <p class="footerh">GENRES</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-            </div>
-
-            <hr class="horizontal">
-            <p class="copyright">Copyright © 2021 Luan Boshnjaku & Olt Gashi</p>
-        </footer>
+        <?php
+        require_once('footer.php');
+        ?>
         <script src="javascript\script.js"></script>
     </body>
 </html>
