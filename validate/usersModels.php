@@ -1,6 +1,6 @@
 <?php
-require_once('.\connection\dpconnect.php');
-class User extends dbConnect{
+require_once('dpconnect.php');
+class Users extends dbConnect{
 
     private $id;
     private $name;
@@ -60,15 +60,24 @@ class User extends dbConnect{
         return $this->password;
     }
 
+    public function setRole($role){
+        $this->role=$role;
+    }
+    public function getRole(){
+        return $this->role;
+    }
+
     public function insertUsers(){
-        $sql="INSERT INTO users (name,surname,username,email,password) VALUES (:name,:surname,:username,:email,:password,)";
+        $sql="INSERT INTO users (id,name,surname,username,email,password,role) VALUES (:id,:name,:surname,:username,:email,:password,:role)";
     
         $stm=$this->dbconn->prepare($sql);
+        $stm->bindParam('id',$this->id);
         $stm->bindParam(':name',$this->name);
         $stm->bindParam(':surname',$this->surname);
         $stm->bindParam(':username',$this->username);
         $stm->bindParam(':email',$this->email);
         $stm->bindParam(':password',$this->password);
+        $stm->bindParam(':role',$this->role);
 
         $stm->execute();
     }
