@@ -2,7 +2,7 @@ var button = document.getElementById("loginbuttoni");
 
 var usernameMsg = document.getElementById("usernameerrorlogin");
 var passwordMsg = document.getElementById("passworderrorlogin");
-var usernameRegex = /[a-z]+[.]+[a-z]+/;
+var usernameRegex = /^[A-Z]\w+[._-]?\w+/;
 var passwordRegex = /^[A-Z]\w+[a-z]\d{3}/;
 
 button.addEventListener("click", function(event){
