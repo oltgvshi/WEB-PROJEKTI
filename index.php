@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,9 +20,26 @@
             </div>
 
             <div id="butonat">
-                <a href="register.php"><button id="reg">Register</button></a>
-                <a href="login.php"><button id="log">Login</button></a>
+            <div id="butonat">
+            <?php
+                if(!isset($_SESSION['username'])){
+                     echo '<a href="login.php"><button id="log">Login</button></a>';
+                    }        
+                ?>
+                <?php
+                if(!isset($_SESSION['username'])){
+                     echo '<a href="register.php"><button id="reg">Register</button></a';
+                    }
+                  
+                ?>
             </div>
+            <?php
+                if(isset($_SESSION['username'])){
+                ?>
+                Welcome <?php echo $_SESSION["username"]; ?>. Click here to <a href="logout.php" tite="Logout">Logout.
+                <?php
+                }else echo '<h1 style="color:#FFFFFF">Please login first .</h1>';
+                ?>
         </header>
         <div class="sliderdiv">
             <div class="slidermain">

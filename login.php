@@ -1,3 +1,12 @@
+<?php 
+session_start();
+
+if(isset($_SESSION['username'])){
+    header("location:index.php");
+}
+
+else{
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,7 +31,8 @@
                 <!--<a href="login.php"><button id="log">Login</button></a>-->
             </div>
         </header>
-       
+        <form id="formlogin" method="post" class="loginform" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+
         <div class="loginpage">
             <i class="far fa-user-circle" id="person"></i>
             <div class="usernamelogin">
@@ -30,7 +40,7 @@
                     <h6>Username</h6>
                     <p id="usernameerrorlogin"> </p>
                 </div>
-                <input type="text" id="usernameinputlogin" placeholder="Type your username">
+                <input type="text" id="usernameinputlogin" name='username' placeholder="Type your username">
             </div>
 
 
@@ -39,86 +49,21 @@
                     <h6>Password</h6>
                     <p id="passworderrorlogin"> </p>
                 </div>
-                <input type="password" id="passwordinputlogin" placeholder="Type your password">
+                <input type="password" id="passwordinputlogin" name='password' placeholder="Type your password">
             </div>
 
 
-            <button id="loginbuttoni">Login</button>
+            <button tybe='submit' id="loginbuttoni" name='login' >Login</button>
+
         </div>
-
-        <footer>
-            <div class="logocontact">
-                <div class="logo">
-                    <a href="#"><img src="Logo/Logo_white.png" alt="Logo" id="logoheader"></a>
-                </div>
-                <div class="social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-            
-            <div class="footercontent">
-                <div class="footerh1p">
-                    <p class="footerh">GENRES</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-            </div>
-
-            <hr class="horizontal">
-            <p class="copyright">Copyright © 2021 Luan Boshnjaku & Olt Gashi</p>
-        </footer>
+        </form>
+        
         <script src="javascript\login.js"></script>
+        <?php
+        require_once('footer.php');
+        include_once 'validate\loginValidate.php';
+}
+        ?>
+        
     </body>
 </html>
