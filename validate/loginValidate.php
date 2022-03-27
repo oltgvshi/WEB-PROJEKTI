@@ -8,7 +8,7 @@
 
            require_once('usersModels.php');
         
-        $user = new User();
+        $user = new Users();
 
         $users = $user->getUsers();
 
