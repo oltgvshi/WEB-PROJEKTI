@@ -50,28 +50,27 @@ if ($_SESSION['role'] != 'admin'){
                 foreach ($users as $u) {
                     echo
                     "
-    <tr>
-         <td>$u[id]</td>
-         <td>$u[name]</td>
-         <td>$u[surname] </td>
-         <td>$u[email] </td>
-         <td>$u[username] </td>
-         <td>$u[password] </td>
-         <td>$u[role]</td>
+                <tr>
+                <td>$u[id]</td>
+                <td>$u[name]</td>
+                <td>$u[surname] </td>
+                <td>$u[email] </td>
+                <td>$u[username] </td>
+                <td>$u[password] </td>
+                <td>$u[role]</td>
         
    
          
-    </tr>
-   
-    ";
-    /*mrenda tr
-    <td><a  href='edit.php?id=$u[id]'>Edit</a> </td>
-         <td><a  href='delete.php?id=$u[id]'>Delete</a></td>
-    */
+                </tr>
+            
+                ";
+                /*mrenda tr
+                <td><a  href='edit.php?id=$u[id]'>Edit</a> </td>
+                    <td><a  href='delete.php?id=$u[id]'>Delete</a></td>
+                */
                 }
                 ?>
-            </table>
-</form>
+        </table>
         <?php
         require_once 'footer.php';
 }
