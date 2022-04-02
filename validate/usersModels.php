@@ -21,7 +21,6 @@ class Users extends dbConnect{
         $this->password=$password;
         $this->role=$role;
         
-        
         $this->dbconn=$this->connectDB();
     }
 
@@ -68,7 +67,7 @@ class Users extends dbConnect{
     }
 
     public function insertUsers(){
-        $sql="INSERT INTO users (id,name,surname,username,email,password,role) VALUES (:id,:name,:surname,:username,:email,:password,:role)";
+        $sql="INSERT INTO users (id,name,surname,username,email,password) VALUES (:id,:name,:surname,:username,:email,:password)";
     
         $stm=$this->dbconn->prepare($sql);
         $stm->bindParam('id',$this->id);
@@ -77,7 +76,6 @@ class Users extends dbConnect{
         $stm->bindParam(':username',$this->username);
         $stm->bindParam(':email',$this->email);
         $stm->bindParam(':password',$this->password);
-        $stm->bindParam(':role',$this->role);
 
         $stm->execute();
     }
@@ -91,7 +89,7 @@ class Users extends dbConnect{
     }
 
     public function getUsersByUsername($username){
-        $sql="SELECT * FROM user where username=$username";
+        $sql="SELECT * FROM users where username=:username";
         $stm=$this->dbconn->prepare($sql);
         $stm->execute();
         $users=$stm->fetchAll(PDO::FETCH_ASSOC);

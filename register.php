@@ -79,8 +79,8 @@ else{
         </div>
 </form>
         <?php
-        require_once('footer.php');
         include_once 'validate\registerValidate.php';
+        require_once 'footer.php';
 }
         ?>
         <script src="javascript\register.js"></script>

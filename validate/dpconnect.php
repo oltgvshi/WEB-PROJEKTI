@@ -15,8 +15,8 @@
     $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION) . "<br/>";
     $this->conn->setAttribute(PDO::FETCH_BOUND, PDO::FETCH_BOTH);
     
-    } catch (PDOException $pdoe) {
-    die("Lidhja ne databaze eshte gabim {$this->dbname} :" . $pdoe->getMessage());
+    } catch (PDOException $exception) {
+    die($exception->getMessage());
     }
     return $this->conn;
         }

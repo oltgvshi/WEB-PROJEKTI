@@ -18,8 +18,6 @@ session_start();
             <div id="search">
                 <input id="searchinput" type="text" placeholder="Search a movie">
             </div>
-
-            <div id="butonat">
             <div id="butonat">
             <?php
                 if(!isset($_SESSION['username'])){

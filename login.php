@@ -60,8 +60,8 @@ else{
         
         <script src="javascript\login.js"></script>
         <?php
-        require_once('footer.php');
         include_once 'validate\loginValidate.php';
+        require_once 'footer.php';
 }
         ?>
         
