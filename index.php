@@ -1,5 +1,13 @@
 <?php
 session_start();
+$hide = "";
+if(isset($_SESSION['username'])){
+    if ($_SESSION['role'] == "admin") {
+        $hide = "";
+    } else {
+        $hide = "hide";
+    }
+   }
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,6 +16,11 @@ session_start();
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <script src="https://kit.fontawesome.com/4480201544.js" crossorigin="anonymous"></script>
         <title></title>
+        <style>
+            .hide{
+                display: none;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -30,7 +43,11 @@ session_start();
                 <?php
                 if(!isset($_SESSION['username'])){
                      echo '<a href="register.php"><button id="reg">Register</button></a';
+                    }else{ ?>
+                    <a href='dashboard.php'> <button id="reg" class="<?php echo $hide ?>">Dashboard</button></a>
+                    <?php
                     }
+                    
                 ?>
             </div>
         </header>

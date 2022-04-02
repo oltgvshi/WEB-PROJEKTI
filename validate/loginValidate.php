@@ -8,9 +8,9 @@
 
            require_once('usersModels.php');
         
-        $user = new Users();
+            $user = new Users();
 
-        $users = $user->getUsers();
+            $users = $user->getUsers();
 
 
            $i=0;
@@ -21,6 +21,10 @@
                    session_start();
                    $_SESSION['username'] = $username;
                    $_SESSION['password'] = $password;
+                   $_SESSION['name'] = $u['name'];
+                   $_SESSION['surname'] = $u['surname'];
+                   $_SESSION['email'] = $u['email'];
+                   $_SESSION['role'] = $u['role'];
                    header("location:index.php");
                    exit();
 
