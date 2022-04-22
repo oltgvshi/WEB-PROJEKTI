@@ -88,18 +88,38 @@ class Users extends dbConnect{
         return $users;
     }
 
-    public function getUsersByUsername($username){
-        $sql="SELECT * FROM users where username=:username";
+    public function getUserById($id){
+
+        $sql = "SELECT * from users WHERE id = '$id'";
         $stm=$this->dbconn->prepare($sql);
+
         $stm->execute();
-        $users=$stm->fetchAll(PDO::FETCH_ASSOC);
-        return $users;
+        $user = $stm->fetch();
+
+        return $user;
     }
 
-    public function updateDhenat(){
-        $sql='UPDATE users SET name=?, surname=?, username=?, email=? where password=?';
-        
+
+    public function updateUsers($id,$name,$surname,$username,$email,$password,$role){
+        $sql = "UPDATE users SET name=?, surname=?, email=?, username=?, password=?, role=? WHERE id=?";
+
         $stm=$this->dbconn->prepare($sql);
-        $stm->execute([$this->name, $this->surname,$this->username,$this->email, $this->password]);
-        }
+
+        $stm->execute([$name, $surname, $email, $username, $password, $role, $id]);
+
+        return  "<script>alert('Update was successful')</script>";
+    }
+
+
+    public function deleteUser($id){
+        
+        $sql = "DELETE FROM users WHERE id=?";
+
+        $stm=$this->dbconn->prepare($sql);
+
+        $stm->execute([$id]);
+
+        echo "<script>alert('Delete was successful')</script>";
+    }
+    
 }

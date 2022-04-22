@@ -1,6 +1,11 @@
 <?php
 session_start();
 $hide = "";
+include_once 'validate\moviesModels.php';
+$movie = new Movies();
+
+$movies = $movie->getMovies();
+
 if(isset($_SESSION['username'])){
     if ($_SESSION['role'] == "admin") {
         $hide = "";
@@ -104,20 +109,27 @@ if(isset($_SESSION['username'])){
             <div class="movieslist">
                 <h2 class="moviegenreh"><a href="#">Most Popular</a></h2>
                 <div class="moviesslide">
-                    <div class="filmimain">
-                        <div class="play">
-                            <img src="movieposters/nowayhome.jpg" alt="" class="posterimg">
-                            <div class="list">
-                                <img src="movieposters/greybg.png" alt="" class="">
-                                <a href="movie.php"><p class="playbutton">&#9654;</p></a>
-                                <p class="listadd">Add to My List</p>
+                    <?php
+                    foreach ($movies as $m){
+                        echo "
+                        <div class='filmimain'>
+                        <div class='play'>
+                            <img src='movieposters/$m[image].jpg' alt='' class='posterimg'>
+                            <div class='list'>
+                                <img src='movieposters/greybg.png' alt='' class=''>
+                                <a href='movie.php'><p class='playbutton'>&#9654;</p></a>
+                                <p class='listadd'>Add to My List</p>
+                                </div>
                             </div>
-                        </div>
+                                    <p class='movietitull'>$m[title]</p>
+                                    <p class='moviedescript'>$m[year] $m[length] </p>
+                                    <p class='moviedescript'>$m[genre]</p>
+                                </div>
+                            ";
+                        }
+                    
 
-                        <h4 class="movietitull"><a href="#">No Way Home</a></h4>
-                        <p class="moviedescript">(2018) · 1 hr 22 min</p>
-                        <p class="moviedescript">Comedy, Drama, Romance</p>
-                    </div>
+                    ?>
                     
                     <div class="filmimain">
                         <div class="play">
