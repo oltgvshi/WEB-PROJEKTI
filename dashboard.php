@@ -129,7 +129,7 @@ if ($_SESSION['role'] != 'admin'){
                 if(mysqli_num_rows($genre_run) > 0){ ?>
                     <h6>Genre</h6>
                     <select name="id" required>
-                        <option value="">Choose genre</option>
+                        <option value="" disabled>Choose genre</option>
                         <?php
                             foreach($genre_run as $row){
                         ?>
