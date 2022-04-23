@@ -66,6 +66,16 @@ if(isset($_POST['editButton'])){
     $movie->updateMovie($id,$image,$title,$year,$length,$moviedescription,$movielink);
     header("location:dashboard.php");
 
+    include_once 'validate\activitiesModels.php';
+
+    $username = $_SESSION['username'];
+
+    $activity = "Edited movie";
+
+    $activities = new activitiesModels();
+
+    $activities->activities($username,$activity,$title);
+
 }
 }
 

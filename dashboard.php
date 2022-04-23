@@ -217,6 +217,41 @@ if ($_SESSION['role'] != 'admin'){
                 ";
                 }
                 ?>
+        </table>
+            </div>
+
+            <div class="main" >
+        <table style="max-height:10px; margin-left:2.60%;margin-bottom:3%" >
+                <caption>ACTIVITIES TABLE</caption>
+
+                <tr>
+                    <th>ID</th>
+                    <th>USERNAME</th>
+                    <th>ACTIVITY TYPE</th>
+                    <th>CHANGED ITEM</th>
+                    <th>TIME</th>
+                </tr>
+                <?php
+
+                require_once('validate\activitiesModels.php');
+              
+                $activities = new activitiesModels();
+
+                $activitie = $activities->getActivites();
+
+                foreach ($activitie as $a){
+                    echo
+                    "
+                <tr>
+                <td>$a[id]</td>
+                <td>$a[username]</td>
+                <td>$a[activityType]</td>
+                <td>$a[changedItem] </td>
+                <td>$a[time] </td>    
+                </tr>
+            
+                ";
+                }
                 ?>
         </table>
             </div>

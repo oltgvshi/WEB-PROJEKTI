@@ -16,6 +16,17 @@ $user = $users->getUserById($userId);
 
 $users->deleteUser($userId);
 
+include_once 'validate\activitiesModels.php';
+
+$username = $_SESSION['username'];
+
+$deletedUser = $user['username'];
+
+$activity = "Deleted user";
+
+$activities = new activitiesModels();
+
+$activities->activities($username,$activity,$deletedUser);
 
 header("location:dashboard.php");
 }

@@ -16,8 +16,21 @@ $movies = $movie->getMoviesById($movieId);
 
 $movie->deleteMovie($movieId);
 
+include_once 'validate\activitiesModels.php';
+
+$username = $_SESSION['username'];
+
+$deletedMovie = $movies['title'];
+
+$activity = "Deleted movie";
+
+$activities = new activitiesModels();
+
+$activities->activities($username,$activity,$deletedMovie);
 
 header("location:dashboard.php");
+
+echo  "<script>alert('Insert was successful')</script>";
 }
 
 ?>

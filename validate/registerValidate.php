@@ -22,6 +22,20 @@
         $_SESSION['surname'] = $_POST['surname'];
         $_SESSION['email'] = $_POST['email'];
         $_SESSION['role'] = $_POST['role'];
+
+        include_once 'activitiesModels.php';
+    
+
+        $username = $_SESSION['username'];
+    
+        $changedUser = $_POST['name']." ".$_POST['surname'];
+    
+        $activity = "Edited user";
+    
+        $activities = new activitiesModels();
+    
+        $activities->activities($username,$activity,$changedUser);
+        
         header("location:index.php");
         
     }

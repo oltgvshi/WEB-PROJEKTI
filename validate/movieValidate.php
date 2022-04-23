@@ -18,6 +18,18 @@ if(isset($_POST['insertButton'])){
         $movie->setMoviedescription($_POST['moviedescription']);
         $movie->setMovielink($_POST['movielink']);
         $movie->insertMovies();
+
+        include_once 'activitiesModels.php';
+
+        $username = $_SESSION['username'];
+
+        $activity = "Inserted Movie";
+
+        $title= $_POST['title'];
+
+        $activities = new activitiesModels();
+
+        $activities->activities($username,$activity,$title);
         
         echo  "<script>alert('Insert was successful')</script>";
     }

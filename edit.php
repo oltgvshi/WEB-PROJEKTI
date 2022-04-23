@@ -65,6 +65,21 @@ if(isset($_POST['editButton'])){
     
 
     $users->updateUsers($id,$name,$surname,$username,$email,$password,$role);
+    
+
+    include_once 'validate\activitiesModels.php';
+    
+
+    $username = $_SESSION['username'];
+
+    $changedUser = $_POST['name']." ".$_POST['surname'];
+
+    $activity = "Edited user";
+
+    $activities = new activitiesModels();
+
+    $activities->activities($username,$activity,$changedUser);
+
     header("location:dashboard.php");
 
 }
