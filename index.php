@@ -117,13 +117,13 @@ if(isset($_SESSION['username'])){
                             <img src='movieposters/$m[image].jpg' alt='' class='posterimg'>
                             <div class='list'>
                                 <img src='movieposters/greybg.png' alt='' class=''>
-                                <a href='movie.php'><p class='playbutton'>&#9654;</p></a>
+                                <a href='movie.php?id=$m[id]'><p class='playbutton'>&#9654;</p></a>
                                 <p class='listadd'>Add to My List</p>
                                 </div>
                             </div>
                                     <p class='movietitull'>$m[title]</p>
                                     <p class='moviedescript'>$m[year] $m[length] </p>
-                                    <p class='moviedescript'>$m[genre]</p>
+                                    <p class='moviedescript'>$m[genre_id]</p>
                                 </div>
                             ";
                         }

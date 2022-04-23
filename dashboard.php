@@ -128,7 +128,7 @@ if ($_SESSION['role'] != 'admin'){
 
                 if(mysqli_num_rows($genre_run) > 0){ ?>
                     <h6>Genre</h6>
-                    <select name="id" required>
+                    <select name="genre_id" required>
                         <option value="" disabled>Choose genre</option>
                         <?php
                             foreach($genre_run as $row){
@@ -161,8 +161,10 @@ if ($_SESSION['role'] != 'admin'){
             <input style="width:40%" type="text" id="yearID" name="year" placeholder="Type Movie Year" required>
             <h6>Movie Length</h6>
             <input style="width:40%" type="text" id="lengthID" name="length" placeholder="Type Movie Length" required>
-            <h6>Movie Genre</h6>
-            <input style="width:40%" type="text" id="genreID" name="genre" placeholder="Type Movie Genre" required>
+            <h6>Movie Description</h6>
+            <input style="width:40%" type="text" id="moviedescription" name="moviedescription" placeholder="Type Movie Description" required>
+            <h6>Movie Link</h6>
+            <input style="width:40%" type="text" id="movielink" name="movielink" placeholder="Type Movie Link" required>
             <input style="align-self:center"type="submit" id="register" name="insertButton" value="Insert">
             <?php include_once 'validate\movieValidate.php'?>
         </form>
@@ -214,6 +216,7 @@ if ($_SESSION['role'] != 'admin'){
             
                 ";
                 }
+                ?>
                 ?>
         </table>
             </div>

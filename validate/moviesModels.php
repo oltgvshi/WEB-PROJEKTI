@@ -75,7 +75,7 @@ class Movies extends dbConnect{
     }
 
     public function insertMovies(){
-        $sql="INSERT INTO movies (id,genre_id,image,title,moviedescription,movielink,year,length) VALUES (:id,:genre_id,:image,:title,:moviedescription,:movielink,:year,:length,)";
+        $sql="INSERT INTO movies (id,genre_id,image,title,moviedescription,movielink,year,length) VALUES (:id,:genre_id,:image,:title,:moviedescription,:movielink,:year,:length)";
     
         $stm=$this->dbconn->prepare($sql);
         $stm->bindParam('id',$this->id);
@@ -111,7 +111,7 @@ class Movies extends dbConnect{
     }
 
     public function updateMovie($id,$image,$title,$year,$length,$moviedescription,$movielink){
-        $sql = "UPDATE movies SET image=?, title=?, moviedescription=?,movielink=?, year=?, length=? WHERE id=?";
+        $sql = "UPDATE movies SET image=?,title=?, moviedescription=?,movielink=?, year=?, length=? WHERE id=?";
 
         $stm=$this->dbconn->prepare($sql);
 

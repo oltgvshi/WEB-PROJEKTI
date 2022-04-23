@@ -15,8 +15,8 @@ if(isset($_POST['insertButton'])){
         $movie->setGenre_id($_POST['genre_id']);
         $movie->setYear($_POST['year']);
         $movie->setLength($_POST['length']);
-        $movie->setMoviedescription($_POST['moviesetmoviedescription']);
-        $movie->setMovielink($_POST['moviesetmovielink']);
+        $movie->setMoviedescription($_POST['moviedescription']);
+        $movie->setMovielink($_POST['movielink']);
         $movie->insertMovies();
         
         echo  "<script>alert('Insert was successful')</script>";

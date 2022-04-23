@@ -33,8 +33,7 @@ $movies = $movie->getMoviesById($movieId);
     <h3>Edit</h3>
     <form action="" method="post">
         <input type="text" name="id"  value="<?=$movies['id']?>" readonly> <br><br>
-        <!-- <input id="surnameINP" type="id" name="title"  value=""> <br>
-        <label id="surnameerror" for="surname"></label><br> -->
+        <label id="surnameerror" for="surname"></label><br> 
         <input id="nameINP" type="text" name="image"  value="<?=$movies['image']?>"> <br> 
         <label id="nameerror" for="name"></label><br>
         <input id="surnameINP" type="text" name="title"  value="<?=$movies['title']?>"> <br>
@@ -56,7 +55,6 @@ $movies = $movie->getMoviesById($movieId);
 
 if(isset($_POST['editButton'])){	
     $id = $movies['id'];
-    //$genre_id = $_POST['genre_id'];
     $image = $_POST['image'];
     $title = $_POST['title'];
     $year = $_POST['year'];
