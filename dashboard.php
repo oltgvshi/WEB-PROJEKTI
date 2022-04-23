@@ -121,17 +121,48 @@ if ($_SESSION['role'] != 'admin'){
             
 
         <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+            <?php
+                $genres = "SELECT * FROM ganre";
+                $connection = mysqli_connect("localhost", "root", "", "web_projekti");
+                $genre_run = mysqli_query($connection, $genres);
+
+                if(mysqli_num_rows($genre_run) > 0){ ?>
+                    <h6>Genre</h6>
+                    <select name="id" required>
+                        <option value="">Choose genre</option>
+                        <?php
+                            foreach($genre_run as $row){
+                        ?>
+                            <option value="<?php echo $row['genreID']?>"><?php echo $row['genre']; ?></option>
+                        <?php
+                            }
+                        ?>
+                        
+                    </select>
+
+                    <!-- foreach($genre_run as $row){
+                        echo $row['genre'];
+                    } -->
+                    <?php
+                }
+                else{
+                    echo "No data available";
+                }
+                
+            ?>
+
+            
             <h4 style="font-family:'Calibri';">Add a New Product</h4>
             <h6>Movie Image</h6>
-            <input style="width:40%" type="text" id="imageID" name="image" placeholder="Type Movie Image">
+            <input style="width:40%" type="text" id="imageID" name="image" placeholder="Type Movie Image" required>
             <h6>Movie Title</h6>
-            <input style="width:40%" type="text" id="titleID" name="title" placeholder="Type Movie Title">
+            <input style="width:40%" type="text" id="titleID" name="title" placeholder="Type Movie Title" required>
             <h6>Movie Year</h6>
-            <input style="width:40%" type="text" id="yearID" name="year" placeholder="Type Movie Year">
+            <input style="width:40%" type="text" id="yearID" name="year" placeholder="Type Movie Year" required>
             <h6>Movie Length</h6>
-            <input style="width:40%" type="text" id="lengthID" name="length" placeholder="Type Movie Length">
+            <input style="width:40%" type="text" id="lengthID" name="length" placeholder="Type Movie Length" required>
             <h6>Movie Genre</h6>
-            <input style="width:40%" type="text" id="genreID" name="genre" placeholder="Type Movie Genre">
+            <input style="width:40%" type="text" id="genreID" name="genre" placeholder="Type Movie Genre" required>
             <input style="align-self:center"type="submit" id="register" name="insertButton" value="Insert">
             <?php include_once 'validate\movieValidate.php'?>
         </form>
