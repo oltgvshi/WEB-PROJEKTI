@@ -49,6 +49,17 @@ if(isset($_POST['editButton'])){
     $genres->updateGenres($id,$g);
     header("location:dashboard.php");
 
+    include_once 'validate\activitiesModels.php';
+
+    $username = $_SESSION['username'];
+
+    $activity = "Edited Genre";
+
+    $activities = new activitiesModels();
+
+    $activities->activities($username,$activity,$g);
+
+
 }
 }
 

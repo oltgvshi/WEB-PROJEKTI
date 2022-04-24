@@ -16,6 +16,19 @@ $genre = $genres->getGenresById($genreID);
 
 $genres->deleteGenres($genreID);
 
+
+include_once 'validate\activitiesModels.php';
+
+$username = $_SESSION['username'];
+
+$deletedMovie = $genre['genre'];
+
+$activity = "Deleted Genre";
+
+$activities = new activitiesModels();
+
+$activities->activities($username,$activity,$deletedMovie);
+
 header("location:dashboard.php");
 
 echo  "<script>alert('Delete was successful')</script>";
