@@ -25,34 +25,11 @@ if(isset($_SESSION['username'])){
         </style>
     </head>
     <body>
-        <header>
-            <div id="left">
-                <a href="#"><img src="Logo/Logo_white.png" alt="Logo" id="logoheader"></a>
-            </div>
+        
+        <?php
+        require_once('header.php');
+        ?>
 
-            <div id="search">
-                <input id="searchinput" type="text" placeholder="Search a movie">
-            </div>
-            <div id="butonat">
-            <?php
-                if(!isset($_SESSION['username'])){
-                     echo '<a href="login.php"><button id="log">Login</button></a>';
-                    }
-                    else if(isset($_SESSION['username'])){
-                        echo '<a href="logout.php"><button id="log">Logout</button></a>';
-                    }        
-                ?>
-                <?php
-                if(!isset($_SESSION['username'])){
-                     echo '<a href="register.php"><button id="reg">Register</button></a';
-                    }else{ ?>
-                    <a href='dashboard.php'> <button id="reg" class="<?php echo $hide ?>">Dashboard</button></a>
-                    <?php
-                    }
-                    
-                ?>
-            </div>
-        </header>
         <div class="sliderdiv">
             <div class="slidermain">
                 <div class="slider">

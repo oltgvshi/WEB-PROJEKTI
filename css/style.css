@@ -72,10 +72,13 @@ a{
     align-items: center;
 }
 
+.headerdiv{
+    padding: 0px 20px;
+}
+
 #reg{
     width: 140px;
     height: 32px;
-    padding: 0px 40px;
     margin-right: 30px;
     font-size: 16px;
     border: none;
@@ -474,3 +477,12 @@ footer{
 }
 
 /*Login*/
+
+@media only screen and (max-width: 768px) {
+    #butonat {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }

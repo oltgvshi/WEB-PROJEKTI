@@ -65,11 +65,10 @@ if ($_SESSION['role'] != 'admin'){
         <title></title>
     </head>
     <body>
-        <header>
-            <div id="left">
-            <a href="index.php"><img src="Logo/Logo_white.png" alt="Logo" id="logoheader"></a>
-            </div>
-        </header>
+     <?php
+        require_once('header.php');
+        ?>
+
         <div class="main" style="min-height:600px;
         padding-top:30px;display:flex;flex-direction:row;justify-content:space-around;flex-wrap:wrap;">
         <table style="max-height:10px; margin-left:2.60%;margin-bottom:3%" >

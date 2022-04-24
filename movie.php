@@ -21,21 +21,9 @@ $genre = $movie->getGenresById($genreID);
         <title></title>
     </head>
     <body>
-        <header>
-            <div id="left">
-                <a href="index.php"><img src="Logo/Logo_white.png" alt="Logo" id="logoheader"></a>
-                <b><h2 id="topbrowse">Browse</h2></b>
-            </div>
-
-            <div id="search">
-                <input id="searchinput" type="text" placeholder="Search a movie">
-            </div>
-
-            <div id="butonat">
-                <a href="register.php"><button id="reg">Register</button></a>
-                <a href="login.php"><button id="log">Login</button></a>
-            </div>
-        </header>
+        <?php
+        require_once('header.php');
+        ?>
        
         <div class="main">
             <iframe width="100%"  height="900px" src="https://www.youtube.com/embed/<?php  echo $movies['movielink']; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
