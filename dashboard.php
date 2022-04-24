@@ -220,7 +220,7 @@ if ($_SESSION['role'] != 'admin'){
             <h4 style="font-family:'Calibri';">Add a New Genre</h4>
             <h6>Movie Genre</h6>
             <input style="width:40%" type="text" id="genre" name="genre" placeholder="Type Genre" required>
-            <input style="align-self:center"type="submit" id="register" name="insertButton" value="Insert">
+            <input style="align-self:center"type="submit" id="registerGenre" name="insertButtonGenre" value="Insert">
             <?php include_once 'validate\genresValidate.php'?>
         </form>
 

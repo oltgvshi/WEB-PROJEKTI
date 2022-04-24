@@ -2,7 +2,7 @@
 
 include_once 'validate\genresModels.php';
 
-if(isset($_POST['insertButton'])){
+if(isset($_POST['insertButtonGenre'])){
     if(empty($_POST['genre'])){
         echo "<h5 style='color:red;font-style:italic;font-family:'Courier New'';'>Fill All Fields</h5>";
     }
