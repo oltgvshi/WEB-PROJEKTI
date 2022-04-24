@@ -6,10 +6,12 @@ $movieID = $_GET['id'];
 include_once 'validate\moviesModels.php';
 
 $movie = new Movies();
-
 $movies = $movie->getMoviesById($movieID);
+$genreID = $movies['genre_id'];
+$genre = $movie->getGenresById($genreID);
 
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -46,12 +48,11 @@ $movies = $movie->getMoviesById($movieID);
                 <div class="descr">
                     <h1 class="movietitledsc"> <?php  echo $movies['title']; ?> </h1>
                     <hr class="horizontal">
-                    <p class="moviedescript">(<?php  echo $movies['year']; ?>) <?php  echo $movies['length']; ?></p>
-                    <p class="moviedescript"><?php  echo $movies['genre_id']; ?></p>
+                    <p class="moviedescript">(<?php  echo $movies['year']; ?>) · <?php  echo $movies['length']; ?></p>
+                    <p class="moviedescript"><?php  echo $genre['genre']; ?></p>
                     <br>
                     <p class="tematika"><?php  echo $movies['moviedescription']; ?></p>
                     <hr class="horizontal">
-                    
                 </div>
             </div>
 

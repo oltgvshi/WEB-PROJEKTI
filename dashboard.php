@@ -140,9 +140,6 @@ if ($_SESSION['role'] != 'admin'){
                         
                     </select>
 
-                    <!-- foreach($genre_run as $row){
-                        echo $row['genre'];
-                    } -->
                     <?php
                 }
                 else{
