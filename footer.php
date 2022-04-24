@@ -12,62 +12,15 @@
             
             <div class="footercontent">
                 <div class="footerh1p">
-                    <p class="footerh">GENRES</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                </div>
-
-                <div class="footerh1p">
-                    <p class="footerh">LOREM IPSUM</p>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
-                    <a href=""><p class="footerp">Lorem Ipsum</p></a>
+                    <p class="footerh">GO TO</p>
+                    <a href="index.php"><p class="footerp">Home</p></a>
+                    <a href="login.php"><p class="footerp">Contact</p></a>
+                    <a href="dashboard.php"><p class="footerp">Dashboard</p></a>
                 </div>
             </div>
 
             <hr class="horizontal">
             <p class="copyright">Copyright © 2021 Luan Boshnjaku & Olt Gashi</p>
         </footer>
+
+        <script src="javascript\script.js"></script>
