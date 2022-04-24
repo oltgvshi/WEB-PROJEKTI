@@ -20,7 +20,7 @@
             </div>
 
             <hr class="horizontal">
-            <p class="copyright">Copyright © 2021 Luan Boshnjaku & Olt Gashi</p>
+            <p class="copyright">Copyright © 2022 Luan Boshnjaku & Olt Gashi</p>
         </footer>
 
         <script src="javascript\script.js"></script>
