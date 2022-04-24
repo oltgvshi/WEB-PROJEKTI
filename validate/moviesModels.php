@@ -98,6 +98,24 @@ class Movies extends dbConnect{
         return $movies;
     }
 
+    public function getGenres(){
+        $sql="SELECT * FROM ganre";
+        $stm=$this->dbconn->prepare($sql);
+        $stm->execute();
+        $genres=$stm->fetchAll(PDO::FETCH_ASSOC);
+        return $genres;
+    }
+
+    public function getGenresById($id){
+
+        $sql = "SELECT * from ganre WHERE genreID = '$id'";
+        $stm=$this->dbconn->prepare($sql);
+
+        $stm->execute();
+        $ganre = $stm->fetch();
+
+        return $ganre;
+    }
     
     public function getMoviesById($id){
 
@@ -107,6 +125,14 @@ class Movies extends dbConnect{
         $stm->execute();
         $movies = $stm->fetch();
 
+        return $movies;
+    }
+
+    public function getMoviesByGenre($id){
+        $sql="SELECT * FROM movies WHERE genre_id = '$id'";
+        $stm=$this->dbconn->prepare($sql);
+        $stm->execute();
+        $movies=$stm->fetchAll(PDO::FETCH_ASSOC);
         return $movies;
     }
 
