@@ -30,7 +30,7 @@ $activities->activities($username,$activity,$deletedMovie);
 
 header("location:dashboard.php");
 
-echo  "<script>alert('Insert was successful')</script>";
+echo  "<script>alert('Delete was successful')</script>";
 }
 
 ?>

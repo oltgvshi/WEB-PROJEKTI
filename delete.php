@@ -29,6 +29,8 @@ $activities = new activitiesModels();
 $activities->activities($username,$activity,$deletedUser);
 
 header("location:dashboard.php");
+
+echo  "<script>alert('Delete was successful')</script>";
 }
 
 ?>

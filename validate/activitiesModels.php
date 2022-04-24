@@ -12,11 +12,11 @@ class activitiesModels extends dbConnect{
     private $dbconn;
 
 
-   public function __construct($id='',$username='',$activitiesType='',$changedItem='',$time=''){
+   public function __construct($id='',$username='',$activityType='',$changedItem='',$time=''){
        
         $this->id=$id;
         $this->username=$username;
-        $this->activitiesType=$activitiesType;
+        $this->activityType=$activityType;
         $this->changedItem=$changedItem;
         $this->time=$time;
 
