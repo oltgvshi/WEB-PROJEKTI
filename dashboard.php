@@ -69,8 +69,7 @@ if ($_SESSION['role'] != 'admin'){
         require_once('header.php');
         ?>
 
-        <div class="main" style="min-height:600px;
-        padding-top:30px;display:flex;flex-direction:row;justify-content:space-around;flex-wrap:wrap;">
+        <div class="main">
         <table style="max-height:10px; margin-left:2.60%;margin-bottom:3%" >
                 <caption>USERS TABLE</caption>
 
@@ -118,8 +117,10 @@ if ($_SESSION['role'] != 'admin'){
                 ?>
         </table>
             
+        <hr>
 
         <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+        <h4 style="font-family:'Calibri';">Add a New MOVIE</h4>
             <?php
                 $genres = "SELECT * FROM ganre";
                 $connection = mysqli_connect("localhost", "root", "", "web_projekti");
@@ -146,9 +147,6 @@ if ($_SESSION['role'] != 'admin'){
                 }
                 
             ?>
-
-            
-            <h4 style="font-family:'Calibri';">Add a New Product</h4>
             <h6>Movie Image</h6>
             <input style="width:40%" type="text" id="imageID" name="image" placeholder="Type Movie Image" required>
             <h6>Movie Title</h6>
@@ -165,21 +163,6 @@ if ($_SESSION['role'] != 'admin'){
             <?php include_once 'validate\movieValidate.php'?>
         </form>
 
-
-
-        <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
-            <h4 style="font-family:'Calibri';">Add a New Genre</h4>
-            <h6>Movie Genre</h6>
-            <input style="width:40%" type="text" id="genre" name="genre" placeholder="Type Genre" required>
-            <input style="align-self:center"type="submit" id="register" name="insertButton" value="Insert">
-            <?php include_once 'validate\genresValidate.php'?>
-        </form>
-
-
-
-
-
-        </div>
         <div class="main" >
         <table style="max-height:10px; margin-left:2.60%;margin-bottom:3%" >
                 <caption>MOVIES TABLE</caption>
@@ -231,6 +214,53 @@ if ($_SESSION['role'] != 'admin'){
         </table>
             </div>
 
+        <hr>
+
+        <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" style="height:120px">
+            <h4 style="font-family:'Calibri';">Add a New Genre</h4>
+            <h6>Movie Genre</h6>
+            <input style="width:40%" type="text" id="genre" name="genre" placeholder="Type Genre" required>
+            <input style="align-self:center"type="submit" id="register" name="insertButton" value="Insert">
+            <?php include_once 'validate\genresValidate.php'?>
+        </form>
+
+
+        <table style="max-height:10px; margin-left:2.60%;margin-bottom:3%" >
+                <caption>GENRES TABLE</caption>
+
+                <tr>
+                    <th>ID</th>
+                    <th>GENRE</th>
+                    <th>EDIT</th>
+                    <th>DELETE</th>
+                </tr>
+                <?php
+
+                require_once('validate\genresModels.php');
+              
+                $genres = new Genres();
+
+                $genre = $genres->getGenres();
+
+                foreach ($genre as $g){
+                    echo
+                    "
+                <tr>
+                <td>$g[genreID]</td>
+                <td>$g[genre]</td>
+                <td><a  href='editGenres.php?id=$g[genreID]'>Edit</a> </td>
+                <td><a  href='deleteGenres.php?id=$g[genreID]'>Delete</a></td>   
+                </tr>
+            
+                ";
+                }
+                ?>
+        </table>
+
+
+        </div>
+        
+                <hr>
         <div class="main" >
         <table style="max-height:10px; margin-left:2.60%;margin-bottom:3%" >
                 <caption>ACTIVITIES TABLE</caption>
@@ -268,39 +298,9 @@ if ($_SESSION['role'] != 'admin'){
         </div>
 
         <div class="main" >
-        <table style="max-height:10px; margin-left:2.60%;margin-bottom:3%" >
-                <caption>ACTIVITIES TABLE</caption>
-
-                <tr>
-                    <th>ID</th>
-                    <th>GENRE</th>
-                    <th>EDIT</th>
-                    <th>DELETE</th>
-                </tr>
-                <?php
-
-                require_once('validate\genresModels.php');
-              
-                $genres = new Genres();
-
-                $genre = $genres->getGenres();
-
-                foreach ($genre as $g){
-                    echo
-                    "
-                <tr>
-                <td>$g[genreID]</td>
-                <td>$g[genre]</td>
-                <td><a  href='editGenres.php?id=$g[genreID]'>Edit</a> </td>
-                <td><a  href='deleteGenres.php?id=$g[genreID]'>Delete</a></td>   
-                </tr>
-            
-                ";
-                }
-                ?>
-        </table>
+        
         </div>
-
+                <hr>
         <div class="main" >
         <table style="max-height:10px; margin-left:2.60%;margin-bottom:3%" >
                 <caption>CONTACT FORM TABLE</caption>
