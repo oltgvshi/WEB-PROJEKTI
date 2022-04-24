@@ -164,6 +164,21 @@ if ($_SESSION['role'] != 'admin'){
             <input style="align-self:center"type="submit" id="register" name="insertButton" value="Insert">
             <?php include_once 'validate\movieValidate.php'?>
         </form>
+
+
+
+        <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+            <h4 style="font-family:'Calibri';">Add a New Genre</h4>
+            <h6>Movie Genre</h6>
+            <input style="width:40%" type="text" id="genre" name="genre" placeholder="Type Genre" required>
+            <input style="align-self:center"type="submit" id="register" name="insertButton" value="Insert">
+            <?php include_once 'validate\genresValidate.php'?>
+        </form>
+
+
+
+
+
         </div>
         <div class="main" >
         <table style="max-height:10px; margin-left:2.60%;margin-bottom:3%" >
@@ -216,7 +231,7 @@ if ($_SESSION['role'] != 'admin'){
         </table>
             </div>
 
-            <div class="main" >
+        <div class="main" >
         <table style="max-height:10px; margin-left:2.60%;margin-bottom:3%" >
                 <caption>ACTIVITIES TABLE</caption>
 
@@ -250,7 +265,76 @@ if ($_SESSION['role'] != 'admin'){
                 }
                 ?>
         </table>
-            </div>
+        </div>
+
+        <div class="main" >
+        <table style="max-height:10px; margin-left:2.60%;margin-bottom:3%" >
+                <caption>ACTIVITIES TABLE</caption>
+
+                <tr>
+                    <th>ID</th>
+                    <th>GENRE</th>
+                    <th>EDIT</th>
+                    <th>DELETE</th>
+                </tr>
+                <?php
+
+                require_once('validate\genresModels.php');
+              
+                $genres = new Genres();
+
+                $genre = $genres->getGenres();
+
+                foreach ($genre as $g){
+                    echo
+                    "
+                <tr>
+                <td>$g[genreID]</td>
+                <td>$g[genre]</td>
+                <td><a  href='editGenres.php?id=$g[genreID]'>Edit</a> </td>
+                <td><a  href='deleteGenres.php?id=$g[genreID]'>Delete</a></td>   
+                </tr>
+            
+                ";
+                }
+                ?>
+        </table>
+        </div>
+
+        <div class="main" >
+        <table style="max-height:10px; margin-left:2.60%;margin-bottom:3%" >
+                <caption>CONTACT FORM TABLE</caption>
+
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>MESSAGE</th>
+                </tr>
+                <?php
+
+                require_once('validate\contactModels.php');
+              
+                $contact = new contactForm();
+
+                $cont = $contact->getContactForm();
+
+                foreach ($cont as $c){
+                    echo
+                    "
+                <tr>
+                <td>$c[id]</td>
+                <td>$c[name]</td>
+                <td>$c[email]</td>
+                <td>$c[message] </td>    
+                </tr>
+            
+                ";
+                }
+                ?>
+        </table>
+        </div>
+        
         <?php
         require_once 'footer.php';
 }
