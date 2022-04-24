@@ -199,7 +199,7 @@ if ($_SESSION['role'] != 'admin'){
                 <td>$m[title] </td>
                 <td>$m[year] </td>
                 <td>$m[length] </td>
-                <td>$m[moviedescription] </td>
+                <td>".substr($m['moviedescription'], 0, 100)."...</td>
                 <td>$m[movielink] </td>
                 <td><a  href='editMovies.php?id=$m[id]'>Edit</a> </td>
                 <td><a  href='deleteMovies.php?id=$m[id]'>Delete</a></td>
